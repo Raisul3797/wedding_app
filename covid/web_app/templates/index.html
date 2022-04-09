@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid-19 website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#prevent">prevent</a>
+        <a href="#symptoms">symptoms</a>
+        <a href="#precautions">precautions</a>
+        <a href="#doctor">doctor</a>
+        <a href="#hand-wash">hand-wash</a>
+        <a class="active" href="#contact">Contact us</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h1>Prevention from Corona Virus</h1>
+        <h3>Stay Home, Stay Safe!</h3>
+        <!-- <a href="#" class="btn">how to prevent</a> -->
+    </div>
+
+</section>
+
+<hr>
+<!-- home section ends -->
+
+<!-- prevent section starts  -->
+
+<section class="prevent" id="prevent">
+
+    <h1 class="heading"> how to prevent virus </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            {% comment %} <img src="images/pre-1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-1.png' %}">
+            <h3>wash your place</h3>
+            <p style="font-size:140%;"> Cleaning and disinfecting high-touch surfaces in your home regularly is an important precaution to lower the risk of infection.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/pre-2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-2.png' %}">
+            <h3>maintain distance</h3>
+            <p style="font-size:140%;">Maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/pre-3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-3.png' %}">
+            <h3>don't touch face</h3>
+            <p style="font-size:140%;">When you touch your face, the germs on your hands can take up residence in your mucous membranes and cause infections, including COVID-19 infections.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/pre-4.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-4.png' %}">
+            <h3>wash your hand</h3>
+            <p style="font-size:140%;">Washing hands can keep you healthy and prevent the spread of respiratory and diarrheal infections. Germs can spread from person to person or from surfaces to people when you touch your eyes, nose, and mouth with unwashed hands, prepare or eat food and drinks with unwashed hands etc.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/pre-5.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-5.png' %}">
+            <h3>getting vaccinated</h3>
+            <p style="font-size:140%;">Vaccines contain weakened or inactive parts of a particular organism (antigen) that triggers an immune response within the body. Newer vaccines contain the blueprint for producing antigens rather than the antigen itself.</p>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/pre-6.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/pre-6.png' %}">
+            <h3>wear a mask</h3>
+            <p style="font-size:140%;">If COVID-19 is widespread in your area, then a fabric mask should be worn in all public settings where it is difficult to keep a physical distance from others, and always when in indoor public spaces.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prevent section ends -->
+
+<!-- symptoms section starts  -->
+
+<section class="symptoms" id="symptoms">
+
+    <h1 class="heading">covid-19 symptoms</h1>
+
+    <div class="column">
+
+        <div class="main-image">
+            {% comment %} <img src="images/main-symp-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/main-symp-img.png' %}">
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                {% comment %} <img src="images/symp-a.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-a.png' %}">
+                <h3>dry cough</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/symp-b.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-b.png' %}">
+                <h3>sore throat</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/symp-c.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-c.png' %}">
+                <h3>cold</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/symp-d.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-d.png' %}">
+                <h3>fever</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/symp-e.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-e.png' %}">
+                <h3>headache</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/symp-f.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/symp-f.png' %}">
+                <h3>vomiting</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- symptoms section ends -->
+
+<!-- precautions section starts  -->
+
+<section class="precautions" id="precautions">
+
+    <h1 class="heading">take precautions against covid-19</h1>
+
+    <div class="column">
+
+        <div class="box-container">
+
+            <h3 class="title">things you should DO</h3>
+
+            <div class="box">
+                {% comment %} <img src="images/do-img1.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/do-img1.png' %}">
+                <div class="info">
+                    <h3>Clean your hand</h3>
+                    <p style="font-size:140%;">Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/do-img2.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/do-img2.png' %}">
+                <div class="info">
+                    <h3>always wear a mask</h3>
+                    <p style="font-size:140%;">Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene. Follow the advice provided by your local health authority.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/do-img3.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/do-img3.png' %}">
+                <div class="info">
+                    <h3>stay home during fever</h3>
+                    <p style="font-size:140%;">Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-container">
+
+            <h3 class="title">things you should NOT DO</h3>
+
+            <div class="box">
+                {% comment %} <img src="images/dont-img1.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/dont-img1.png' %}">
+                <div class="info">
+                    <h3>avoid close contact with animals</h3>
+                    <p style="font-size:140%;"> Avoid crowded areas like dog parks and busy trails, but quiet neighborhood streets and less-popular trails can give you an excellent opportunity to get outside for a long walk.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/dont-img2.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/dont-img2.png' %}">
+                <div class="info">
+                    <h3>avoid close contact with peoples</h3>
+                    <p style="font-size:140%;" >Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/dont-img3.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/dont-img3.png' %}">
+                <div class="info">
+                    <h3>avoid crowded area</h3>
+                    <p style="font-size:140%;">Following a period of strict lockdowns, most countries proceeded towards a policy in which citizens were expected to avoid crowded places, as advised by the WHO (World Health Organization, 2020). Limiting movement to local recreational hotspots as well as (inter)national holiday destinations is considered essential in combating the swift diffusion of COVID-19 infections.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- precautions section ends -->
+
+<!-- doctor section start  -->
+
+<section class="doctor" id="doctor">
+
+    <h1 class="heading">consult to our doctors</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            {% comment %} <img src="images/doc1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/doc1.png' %}">
+            <h3>Andrew D. M.D.</h3>
+            <span>senior expert</span>
+            <div class="share">
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/MetaCareersAPAC" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/doc2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/doc2.png' %}">
+            <h3>Elitza S. Ph.D.</h3>
+            <span>senior expert</span>
+            <div class="share">
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/MetaCareersAPAC" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/doc3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/doc3.png' %}">
+            <h3>Irene G. M.D.</h3>
+            <span>senior expert</span>
+            <div class="share">
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/MetaCareersAPAC" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            {% comment %} <img src="images/doc1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/doc1.png' %}">
+            <h3>Gregory A. M.D.</h3>
+            <span>senior expert</span>
+            <div class="share">
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/MetaCareersAPAC" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            {% comment %} <img src="images/doc2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/doc2.png' %}">
+            <h3>john doe</h3>
+            <span>senior expert</span>
+            <div class="share">
+                <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                <a href="https://www.facebook.com/MetaCareersAPAC" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- doctor section ends -->
+
+<!-- hand-wash section starts  -->
+
+<section class="hand-wash" id="hand-wash">
+
+    <h1 class="heading">how to wash hand properly</h1>
+
+    <div class="column">
+
+        <div class="box-container">
+
+            <div class="box">
+                {% comment %} <img src="images/wash-a.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-a.png' %}">
+                <h3>water and soap</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/wash-b.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-b.png' %}">
+                <h3>palm to palm</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/wash-c.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-c.png' %}">
+                <h3>Between Fingurs</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/wash-d.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-d.png' %}">
+                <h3>Focus on Thumbs</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/wash-e.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-e.png' %}">
+                <h3>Back of Hands</h3>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/wash-f.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/wash-f.png' %}">
+                <h3>Focus on wrist</h3>
+            </div>
+
+        </div>
+
+        <div class="main-image">
+            {% comment %} <img src="images/main-wash-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/main-wash-img.png' %}">
+        </div>
+
+    </div>
+    
+
+</section>
+<!-- hand-wash section ends -->
+
+
+<!-- start contact us page -->
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>contact</span> us</h1>
+
+    <p style="font-size:140%;">This is my contact page.</p>
+
+</section>
+<!-- end contact us page -->
+
+
+
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>Phone: +8801775308562</p>
+            <br>
+            <p>Email: raisulislam9068@gmail.com</p>
+            <br>
+            <p>Facebook: https://www.facebook.com/mdraisul.islam.33234</p>
+            <br>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Bangladesh</a>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+            <a href="#">Russia</a>
+            <a href="#">Japan</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="http://127.0.0.1:8000/#prevent">prevent</a>
+            <a href="http://127.0.0.1:8000/#symptoms">symptoms</a>
+            <a href="http://127.0.0.1:8000/#precautions">precautions</a>
+            <a href="http://127.0.0.1:8000/#doctor">doctor</a>
+            <a href="http://127.0.0.1:8000/#hand-wash">hand-wash</a>
+            <a href="http://127.0.0.1:8000/#contact">contact us</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+            <a href="#">youtube</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> modified by <a href="#">mr. Raisul Islam</a> &copy; copyright @ 2022 </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+<!-- scroll top  -->
+
+<a href="#home" class="scroll-top">
+    {% comment %} <img src="images/scroll-img.png" alt=""> {% endcomment %}
+    <img src="{% static 'images/scroll-img.png' %}">
+</a>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{% static 'script.js' %}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wedding planner website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"> <i class='fa-solid fa-face-grin-tongue'></i>LOGO</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#vendor">vendor</a>
+            <a href="#clients">clients</a>
+            <a href="#team">team</a>
+            <a href="#contact">contact</a>
+            <a href="#blog">blog</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home" style="background: url(static/images/home-bg.jpg);">
+
+        <div class="content">
+            <span>wedding planner agency</span>
+            <h3>we make every moment special!</h3>
+            <a href="https://www.myweddingsuppliers.co.uk/" class="btn">learm more</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <section class="step-container">
+
+        <div class="step">
+            <span>01</span>
+            <h3>engagement</h3>
+            <p>An engagement or betrothal is the period of time between a marriage proposal and the marriage itself.
+                During this period, a couple is said to be fiancés, betrothed, intended, affianced, engaged to be
+                married, or simply engaged.</p>
+            <a href="https://parade.com/969642/marynliles/engagement-quotes/" class="btn">learm more</a>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>save the date</h3>
+            <p>As a general rule of thumb, it's a good idea to mail your save-the-dates four to six months before the
+                wedding—or even earlier if you're planning a destination wedding that may require more extensive travel
+                arrangements.</p>
+            <a href="https://www.brides.com/story/save-the-date-guide#:~:text=As%20a%20general%20rule%20of,require%20more%20extensive%20travel%20arrangements."
+                class="btn">learm more</a>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>wedding ceremony</h3>
+            <p>Most wedding ceremonies involve an exchange of marriage vows by a couple, presentation of a gift
+                (offering, rings, symbolic item, flowers, money, dress), and a public proclamation of marriage by an
+                authority figure or celebrant.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Wedding" class="btn">learm more</a>
+        </div>
+
+    </section>
+
+    <!-- vendor section starts  -->
+
+    <section class="vendor" id="vendor">
+
+        <div class="heading">
+            <h1>top wedding vendors</h1>
+            {% comment %} <img src="images/header-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/header-img.png' %}">
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                {% comment %} <img src="images/img1.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img1.jpg' %}">
+                <div class="info">
+                    <h3>dressing</h3>
+                    <p>For more than 70 years, thousands of brides have traveled to Kleinfeld Bridal in New York City to
+                        find their wedding day looks. From the moment you walk through the doors, you’ll feel the magic
+                        of Kleinfeld.</p>
+                    <a href="https://www.kleinfeldbridal.com/product-category/dresses/new-dresses/" class="btn">learm
+                        more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/img2.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img2.jpg' %}">
+                <div class="info">
+                    <h3>Florist</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolores.Planning a wedding is
+                        hard work! We are to help organize every detail of your day, from the budget to day-of timeline
+                        and beyond.</p>
+                    <a href="https://www.brides.com/flowers-4692031" class="btn">learm more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/img3.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img3.jpg' %}">
+                <div class="info">
+                    <h3>wedding cake</h3>
+                    <p>The wedding cake symbolizes prosperity, good luck and fertility and is made of the best
+                        ingredients available so that the marriage will be long lasting, happy and with many offspring.
+                    </p>
+                    <a href="https://www.magicvenues.com/15-wedding-cake-traditions-and-facts/" class="btn">learm
+                        more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/img4.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img4.jpg' %}">
+                <div class="info">
+                    <h3>venu and hall</h3>
+                    <p>As soon as you and your spouse have settled on a venue, make the reservation. Booking a wedding
+                        venue 15 months in advance is considerably better than finding out your preferred wedding venue
+                        isn't available for the dates you want.</p>
+                    <a href="https://presidentialctr.com/how-far-advance-book-wedding-venue/" class="btn">learm more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/img5.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img5.jpg' %}">
+                <div class="info">
+                    <h3>music and party</h3>
+                    <p>Ideas for musical parties and wedding celebrations. </p>
+                    <a href="https://www.pinterest.com/erinheatonart/music-themed-weddings-and-parties/"
+                        class="btn">learm more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                {% comment %} <img src="images/img6.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img6.jpg' %}">
+                <div class="info">
+                    <h3>photographer</h3>
+                    <p>Everyone wants to keep their memorable day as a photo. If it is a wedding and engagement
+                        ceremony, then there is no space to talk about it.</p>
+                    <a href="https://mybangla24.com/photography-services-bangladesh" class="btn">learm more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- vendor section ends -->
+
+    <!-- client section starts  -->
+
+    <section class="clients" id="clients">
+
+        <div class="heading">
+            <h1>our previous clients</h1>
+            {% comment %} <img src="images/header-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/header-img.png' %}">
+        </div>
+
+        <div class="row">
+
+            <div class="box-container">
+                <div class="box">
+                    {% comment %} <img src="images/client-1.jpg" alt=""> {% endcomment %}
+                    <img src="{% static 'images/client-1.jpg' %}">
+                    <div class="info">
+                        <h3>01. Vicky Kaushal & Katrina Kaif</h3>
+                        <p> <i class="fas fa-quote-left"></i> Vicky Kaushal and Katrina Kaif will be arriving at the
+                            venue (Six Senses Fort Barwar in Sawai Madhopur district, Rajasthan) on December 6.<i
+                                class="fas fa-quote-right"></i> </p>
+                        <br>
+                        <p>rating: 9/10</p>
+                    </div>
+                </div>
+                <div class="box">
+                    {% comment %} <img src="images/client-2.jpg" alt=""> {% endcomment %}
+                    <img src="{% static 'images/client-2.jpg' %}">
+                    <div class="info">
+                        <h3>02. Meghan Markle & Prince Harry</h3>
+                        <p> <i class="fas fa-quote-left"></i> From Meghan Markle and Prince Harry to Princess Eugenie
+                            and Jack Brooksbank, 2018 seemed like the year to get hitched. <i
+                                class="fas fa-quote-right"></i> </p>
+                        <br>
+                        <p>rating: 9/10</p>
+                    </div>
+                </div>
+            </div>
+
+            {% comment %} <img src="images/divider.png" class="divider" alt=""> {% endcomment %}
+            <img src="{% static 'images/divider.png' %}">
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="info">
+                        <h3>03. Cheryl Cole & Liam Payne</h3>
+                        <p> <i class="fas fa-quote-left"></i> Liam Payne and Cheryl Cole are definitely ones for this
+                            list. We're talking about two record-breaking musicians with very successful careers. The
+                            couple has been together since February 2016 and welcomed a baby boy in March 2017. <i
+                                class="fas fa-quote-right"></i> </p>
+                        <br>
+                        <p>rating: 8/10</p>
+                    </div>
+                    {% comment %} <img src="images/client-3.jpg" alt=""> {% endcomment %}
+                    <img src="{% static 'images/client-3.jpg' %}">
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <h3>04. Pixie Lott & Oliver Cheshire</h3>
+                        <p> <i class="fas fa-quote-left"></i> Pixie Lott and Oliver Cheshire manage that very rare
+                            thing: having successful careers, a great social life and still managing to hold down a
+                            relationship. <i class="fas fa-quote-right"></i> </p>
+                        <br>
+                        <p>rating: 7/10</p>
+                    </div>
+                    {% comment %} <img src="images/client-4.jpg" alt=""> {% endcomment %}
+                    <img src="{% static 'images/client-4.jpg' %}">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- client section ends -->
+
+    <!-- team section starts  -->
+
+    <section class="team" id="team">
+
+        <div class="heading">
+            <h1>our creative team</h1>
+            {% comment %} <img src="images/header-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/header-img.png' %}">
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                {% comment %} <img src="images/team-1.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/team-1.png' %}">
+                <h3>Katrina</h3>
+                <span>CEO</span>
+                <p>A wedding planner is a professional who assists with the design, planning and management of a
+                    client's wedding.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                {% comment %} <img src="images/team-2.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/team-2.png' %}">
+                <h3>john deo</h3>
+                <span>Manager</span>
+                <p>We are the wedding day coordinators that you need to make sure your wedding day goes exactly as
+                    planned. The Best Day Details coordinates weddings all over Michigan.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                {% comment %} <img src="images/team-3.png" alt=""> {% endcomment %}
+                <img src="{% static 'images/team-3.png' %}">
+
+
+                <h3>Michel</h3>
+                <span>wedding planner</span>
+                <p>we provide planning assistance for do-it-yourself weddings or those looking for options to share with
+                    their wedding planner.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- team section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+
+        <div class="heading">
+            <h1>contact us</h1>
+            {% comment %} <img src="images/header-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/header-img.png' %}">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+            </div>
+            <textarea placeholder="write something" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- blog section starts  -->
+
+    <section class="blog" id="blog">
+
+        <div class="heading">
+            <h1>our latest blogs</h1>
+            {% comment %} <img src="images/header-img.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/header-img.png' %}">
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                {% comment %} <img src="images/blog-1.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/blog-1.jpg' %}">
+
+                <div class="info">
+                    <h3> <span>01. </span> Muslim Wedding Photography, London </h3>
+                    <p>The Nikha-Baarat /Wedding day feels emotional from the start. After the immam recites the vows
+                        and blessings, their is an explosion of emotion.</p>
+                    <a href="https://shashid.com/asian-wedding-photographer/muslim-arab-wedding-photographer-london-uk/?gclid=EAIaIQobChMIzYmayq-H9wIVkB0rCh3iawmkEAAYAiAAEgJB6PD_BwE"
+                        class="btn">learn more</a>
+                </div>
+            </div>
+            <div class="box">
+                {% comment %} <img src="images/blog-2.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/blog-2.jpg' %}">
+                <div class="info">
+                    <h3> <span>02. </span> Angela Fitch Photography </h3>
+                    <p>“I’M ANGELA AND MY PHOTOGRAPHY PASSION IS CREATING BEAUTIFUL, UNIQUE PHOTOGRAPHY THAT TELLS THE
+                        STORY OF YOUR WEDDING DAY. A STORY THAT YOU WILL TREASURE FOREVER”
+
+                    </p>
+                    <a href="https://angelafitchphotography.co.uk/?gclid=EAIaIQobChMIzYmayq-H9wIVkB0rCh3iawmkEAAYAyAAEgLfx_D_BwE"
+                        class="btn">learn more</a>
+                </div>
+            </div>
+            <div class="box">
+                {% comment %} <img src="images/blog-3.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/blog-3.jpg' %}">
+                <div class="info">
+                    <h3> <span>03. </span> Wedding planner website </h3>
+                    <p>Discover Virtual Events Planner At Shopwebly! - Easily Found! Search and Discover. Find Easily.
+                        Easy Acces. Many Products. Compare Products. Quick Results. Types: 24/7 Accessible, Big Variaty,
+                        Instant Results, Products Online.</p>
+                    <a href="" class="btn">learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blog section ends-->
+
+    <!-- footer section  -->
+
+    <div class="footer"> Modified by <span>md. Raisul Islam</span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        }
+
+    </script>
+
+
+</body>
+
+</html>
